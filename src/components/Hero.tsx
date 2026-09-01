@@ -133,13 +133,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
                 <ArrowRight className="w-4 h-4" />
               </a>
 
-              <button
-                onClick={onOpenResume}
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white hover:bg-slate-50 text-slate-800 text-sm font-semibold border border-slate-200 shadow-sm transition-all duration-300"
+              <a
+                href={personalInfo.resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white hover:bg-slate-50 hover:border-blue-300 hover:text-blue-600 text-slate-800 text-sm font-semibold border border-slate-200 shadow-sm transition-all duration-300"
               >
                 <FileText className="w-4 h-4 text-blue-600" />
                 <span>View Resume</span>
-              </button>
+              </a>
             </div>
           </div>
         </div>

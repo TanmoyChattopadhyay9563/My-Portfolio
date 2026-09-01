@@ -120,13 +120,15 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume }) => {
 
         {/* Action Buttons on Right */}
         <div className="hidden md:flex items-center gap-3">
-          <button
-            onClick={onOpenResume}
-            className="flex items-center gap-1.5 px-4 py-2 text-xs font-bold rounded-full bg-white text-slate-700 border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all shadow-sm"
+          <a
+            href={personalInfo.resumeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 px-4 py-2 text-xs font-bold rounded-full bg-white text-slate-700 border border-slate-200 hover:border-blue-300 hover:text-blue-600 hover:bg-slate-50 transition-all shadow-sm"
           >
             <FileText className="w-3.5 h-3.5 text-blue-600" />
             <span>Resume</span>
-          </button>
+          </a>
 
           <a
             href="#contact"
@@ -172,16 +174,16 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume }) => {
             })}
 
             <div className="pt-4 border-t border-slate-100 flex flex-col gap-3">
-              <button
-                onClick={() => {
-                  setMobileMenuOpen(false);
-                  onOpenResume();
-                }}
+              <a
+                href={personalInfo.resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMobileMenuOpen(false)}
                 className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-100 text-slate-800 text-sm font-bold hover:bg-slate-200 transition-colors"
               >
                 <FileText className="w-4 h-4 text-blue-600" />
-                <span>View &amp; Download Resume</span>
-              </button>
+                <span>Download Resume (PDF)</span>
+              </a>
               <a
                 href="#contact"
                 onClick={(e) => handleNavClick(e, '#contact')}
