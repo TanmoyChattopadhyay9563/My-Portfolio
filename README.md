@@ -10,7 +10,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![AWS Certified](https://img.shields.io/badge/AWS-Certified_Cloud_Practitioner-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/)
 
-[**Explore Live Demo**](https://github.com/TanmoyChattopadhyay9563) • [**View LinkedIn**](https://www.linkedin.com/in/tanmoychattopadhyay) • [**Contact via Email**](mailto:chatterjee.kgp.99@gmail.com)
+[**Explore Live Demo**](https://github.com/TanmoyChattopadhyay9563) • [**📄 Download Resume (PDF)**](https://drive.google.com/file/d/1Uj69xPHHgTZraIReP0izhQqkN3y-vypa/view?usp=sharing) • [**View LinkedIn**](https://www.linkedin.com/in/tanmoychattopadhyay) • [**Contact via Email**](mailto:chatterjee.kgp.99@gmail.com)
 
 </div>
 

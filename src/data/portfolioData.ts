@@ -15,7 +15,8 @@ He has worked on enterprise solutions, monitoring systems, Power BI dashboards, 
   status: "Available for High-Impact Opportunities",
   yearsExperience: "2.5+",
   projectsDelivered: "3+",
-  resumeFileName: "Tanmoy_Chattopadhyay_Resume.pdf"
+  resumeFileName: "Tanmoy_Chattopadhyay_Resume.pdf",
+  resumeUrl: "https://drive.google.com/file/d/1Uj69xPHHgTZraIReP0izhQqkN3y-vypa/view?usp=sharing"
 };
 
 export const personalInterests = [

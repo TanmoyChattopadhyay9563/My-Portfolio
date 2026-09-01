@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { X, Printer, Mail, Phone, MapPin } from 'lucide-react';
+import { X, Printer, Mail, Phone, MapPin, ExternalLink, Download } from 'lucide-react';
 import { personalInfo, experiences, educationList, projects, certifications } from '../data/portfolioData';
 
 interface ResumeModalProps {
@@ -44,13 +44,22 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
             <span className="text-xs font-bold uppercase tracking-wider text-slate-700">Executive CV Preview</span>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3">
+            <a
+              href={personalInfo.resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 px-3.5 sm:px-4 py-2 rounded-full bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold shadow-md hover:shadow-blue-500/25 transition-all"
+            >
+              <span>Download PDF</span>
+              <ExternalLink className="w-3.5 h-3.5" />
+            </a>
             <button
               onClick={handlePrint}
-              className="flex items-center gap-1.5 px-4 py-2 rounded-full bg-slate-100 text-slate-800 hover:text-slate-950 hover:bg-slate-200 text-xs font-bold border border-slate-200 transition-colors shadow-sm"
+              className="hidden sm:flex items-center gap-1.5 px-4 py-2 rounded-full bg-slate-100 text-slate-800 hover:text-slate-950 hover:bg-slate-200 text-xs font-bold border border-slate-200 transition-colors shadow-sm"
             >
               <Printer className="w-3.5 h-3.5 text-blue-600" />
-              <span>Print / PDF</span>
+              <span>Print</span>
             </button>
             <button
               onClick={onClose}
@@ -188,6 +197,35 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Fixed Bottom Action Bar */}
+        <div className="px-6 sm:px-10 py-4 border-t border-slate-200 bg-slate-50/95 backdrop-blur-md flex items-center justify-between z-20">
+          <button
+            onClick={onClose}
+            className="px-5 py-2 rounded-full bg-white text-slate-700 hover:text-slate-950 hover:bg-slate-200 border border-slate-200 text-xs font-bold transition-colors"
+          >
+            Close Preview
+          </button>
+
+          <div className="flex items-center gap-2 sm:gap-3">
+            <button
+              onClick={handlePrint}
+              className="flex items-center gap-1.5 px-4 py-2 rounded-full bg-white text-slate-700 hover:text-slate-950 hover:bg-slate-100 border border-slate-200 text-xs font-bold transition-colors shadow-sm"
+            >
+              <Printer className="w-3.5 h-3.5 text-blue-600" />
+              <span>Print / Save</span>
+            </button>
+            <a
+              href={personalInfo.resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold shadow-md hover:shadow-blue-500/25 transition-all"
+            >
+              <Download className="w-3.5 h-3.5" />
+              <span>Download Official PDF</span>
+            </a>
           </div>
         </div>
       </div>
