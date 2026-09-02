@@ -37,8 +37,8 @@ export const About: React.FC = () => {
   };
 
   const timelineItems = [
-    { role: 'Business Analyst', org: 'Techbridge Consultancy Pvt. Ltd.', period: '2026 → Present', type: 'Full-Time' },
-    { role: 'Business Analyst', org: 'MobileFirst Applications', period: '2025 → 2026', type: 'Full-Time' },
+    { role: 'Business Analyst', org: 'Techbridge Consultancy Pvt. Ltd.', period: '2025 → Present', type: 'Full-Time' },
+    { role: 'Business Analyst', org: 'MobileFirst Applications', period: '2024 → 2025', type: 'Full-Time' },
     { role: 'Frontend & CMS Intern', org: 'CMS & Web Solutions', period: '2024 → 2024', type: 'Internship' },
     { role: 'B.Tech Computer Science', org: 'GL Bajaj Institute of Tech.', period: '2020 → 2024', type: 'Degree' },
   ];

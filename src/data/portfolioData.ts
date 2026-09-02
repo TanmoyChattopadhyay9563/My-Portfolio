@@ -69,7 +69,7 @@ export const experiences: ExperienceItem[] = [
     role: "Business Analyst",
     company: "Techbridge Consultancy Pvt. Ltd.",
     location: "Gurugram, Haryana",
-    period: "September 2026 – Present",
+    period: "September 2025 – Present",
     type: "Full-Time",
     badge: "Current Role",
     responsibilities: [
@@ -87,7 +87,7 @@ export const experiences: ExperienceItem[] = [
     role: "Business Analyst",
     company: "MobileFirst Applications Fintegration",
     location: "Ahmedabad, Gujarat",
-    period: "August 2025 – September 2026",
+    period: "August 2024 – September 2025",
     type: "Full-Time",
     responsibilities: [
       "End-to-end business requirement analysis across financial integration and software products.",
@@ -103,7 +103,7 @@ export const experiences: ExperienceItem[] = [
     id: "intern",
     role: "Technical Intern",
     company: "Frontend & CMS Solutions",
-    location: "Remote / Hybrid",
+    location: "Ahmedabad, India",
     period: "January 2024 – July 2024",
     type: "Internship",
     responsibilities: [

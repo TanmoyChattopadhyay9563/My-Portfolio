@@ -118,30 +118,21 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
             </div>
           </div>
 
-          {/* Right Column: Bio Statement & CTA Button */}
-          <div className="lg:col-span-3 flex flex-col justify-between items-start lg:items-end space-y-8 order-3 text-left lg:text-right">
-            <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed max-w-xs">
-              passionate about translating complex data into strategic business value, executive Power BI dashboards, and scalable architectures.
-            </p>
-
-            <div className="flex flex-col sm:flex-row lg:flex-col gap-3 w-full sm:w-auto">
-              <a
-                href="#contact"
-                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-slate-950 hover:bg-blue-600 text-white text-sm font-semibold shadow-lg shadow-slate-900/10 hover:shadow-blue-500/25 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
-              >
-                <span>Get in Touch</span>
-                <ArrowRight className="w-4 h-4" />
-              </a>
-
-              <a
-                href={personalInfo.resumeUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white hover:bg-slate-50 hover:border-blue-300 hover:text-blue-600 text-slate-800 text-sm font-semibold border border-slate-200 shadow-sm transition-all duration-300"
-              >
-                <FileText className="w-4 h-4 text-blue-600" />
-                <span>View Resume</span>
-              </a>
+          {/* Right Column: Bio & Strategic Focus Card */}
+          <div className="lg:col-span-3 flex flex-col justify-between items-start lg:items-end space-y-4 order-3 text-left lg:text-right">
+            <div className="p-4 sm:p-5 rounded-2xl bg-white/90 border border-slate-200/80 shadow-sm backdrop-blur-sm space-y-3">
+              <div className="flex items-center gap-2 justify-start lg:justify-end">
+                <span className="w-2 h-2 rounded-full bg-blue-500"></span>
+                <span className="text-[11px] font-bold uppercase tracking-wider text-blue-600">Strategic Focus</span>
+              </div>
+              <p className="text-xs sm:text-sm text-slate-700 font-normal leading-relaxed">
+                Passionate about translating complex enterprise data into actionable business value, executive Power BI dashboards, and scalable architectures.
+              </p>
+              <div className="flex flex-wrap gap-1.5 justify-start lg:justify-end pt-1">
+                <span className="px-2 py-0.5 rounded-md bg-blue-50 text-blue-700 text-[10px] font-bold">BRD / FRD</span>
+                <span className="px-2 py-0.5 rounded-md bg-sky-50 text-sky-700 text-[10px] font-bold">Power BI DAX</span>
+                <span className="px-2 py-0.5 rounded-md bg-slate-100 text-slate-700 text-[10px] font-bold">tbXMS Telemetry</span>
+              </div>
             </div>
           </div>
         </div>
